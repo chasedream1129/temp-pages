@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+ "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link href="../css/manpage.css" rel="stylesheet" type="text/css">
+<title>概要</title>
+</head>
+<body>
+<h1 id="SUMMARY">概要</h1>
+<h2 id="ABOUT_LayoutEditor">TWL-ManualEditor について</h2>
+<p>TWL-ManualEditor は、TWL-ManualViewer向けのニンテンドーDSiウェア電子取扱説明書（説明書）を作成、編集することができます。</p>
+
+
+<h2 id="FEATURES">TWL-ManualEditor の機能</h2>
+<h3>TWL-ManualEditorで扱えるファイル</h3>
+<h4>画像ファイル（拡張子　.gif ）。</h4>
+<dl class="enum">
+ <dd>gif形式の画像ファイルで、抜きのある画像を扱えます。</dd>
+</dl>
+<h4>ページファイル（拡張子 .ntpg）。</h4>
+<dl class="enum">
+ <dd>TWL-ManualEditorで作成されるファイルで、画像とテキストを配置して作成します。</dd>
+</dl>
+
+<h4>バイナリファイル（拡張子　.blz）。</h4>
+<dl class="enum">
+<dd>ニンテンドーDSiウェア に組み込まれる説明書のバイナリファイルです。</dd>
+<dd>TWL-ManualEditorでは、プロジェクトを説明書のバイナリファイルとして出力する事ができます。</dd>
+<dd>また、出力された説明書のバイナリファイルを読み込んでプレビューする事ができます。</dd>
+</dl>
+
+<h3>ファイル名に利用可能な文字</h3>
+<p>ファイル名に利用可能な文字は次のとおりです。</p>
+<p>
+<table border="1">
+  <tbody>
+    <tr>
+      <td><b>半角数字</b></td>
+      <td>0123456789</td>
+    </tr>
+    <tr>
+      <td><b>半角アルファベット</b></td>
+      <td>abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</td>
+    </tr>
+    <tr>
+      <td><b>半角スペース</b></td>
+      <td>　</td>
+    </tr>
+    <tr>
+      <td><b>特定の半角記号</b></td>
+      <td>　! # $ % &amp; ' ( ) + - = [ ] ^ _ @ ` { } ~</td>
+    </tr>
+  </tbody>
+</table>
+<p>日本語、全角のアルファベットや全角のスペース、および全角の記号なども利用できません。</p>
+<h3 id="CAN_DO">主な機能と特徴</h3>
+<h4>画像ファイルの読み込み、配置。</h4>
+<dl class="enum">
+  <dd>画像ファイル（拡張子　.gif ）を読み込んで、ページの配置（レイアウト）データを作成することが可能です。</dd>
+</dl>
+<h4>実機プレビュー。</h4>
+<dl class="enum">
+  <dd>TWL-ManualEditorの内容をビューアに転送し、配置を確認することができます。</dd>
+</dl>
+
+<h4>ニンテンドーDSiウェア 電子取扱説明書のリンク構成。</h4>
+<dl class="enum">
+  <dd>説明書のリンクは、ビューアで自動的に構成され目次に表示されます。</dd>
+  <dd>目次には、ページに付けられたファイルネームのソート順に１ページから割り振られます。</dd>
+
+</dl>
+
+
+<h2>TWL-ManualEditor　でのデータ作成</h2>
+<h3>プロジェクトフォルダによるデータ管理</h3>
+<p>TWL-ManualEditorでは、プロジェクトフォルダ単位でのデータ作成ができ、プロジェクトフォルダ内にページファイル（拡張子 .ntpg）と、画像ファイル（拡張子　.gif
+）を格納します。</p>
+<p>また、説明書全体のプレビューもプロジェクトフォルダ単位で行うことが出来ます。</p>
+<h3>オブジェクト配置でのページ作成</h3>
+<p>TWL-ManualEditorでは、オブジェクトをページに配置することでページを作成します。</p>
+<p>オブジェクトには以下の３種類あります。</p>
+<ol>
+<li>ピクチャオブジェクト。
+  <p>画像ファイル（拡張子　.gif ）を扱うオブジェクトです。</p>
+<li>テキストオブジェクト。
+  <p>テキストを扱うオブジェクトです。</p>
+
+<li>フレームオブジェクト。
+  <p>フレームを扱うオブジェクトです。</p>
+
+
+
+</ol>
+</body>
+</html>

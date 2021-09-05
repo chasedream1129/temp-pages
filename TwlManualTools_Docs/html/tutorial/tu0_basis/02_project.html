@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+ "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<meta http-equiv="Content-Style-Type" content="text/css">
+	<link href="../../css/manpage.css" rel="stylesheet" type="text/css">
+	<title>プロジェクトフォルダを指定する</title>
+</head>
+<body>
+<h1 id="Create_Layout">プロジェクトフォルダを指定する</h1>
+<p>作業開始時にプロジェクトフォルダを指定します。</p>
+<h2>プロジェクトとは</h2>
+ <ol>
+  <li>役割。
+   <p>TWL-ManualEditorでは、ページファイルと画像ファイルをプロジェクトフォルダの中の各言語フォルダで管理します。</p>
+   <p>そのため、作業開始時にプロジェクトフォルダを指定する必要があります。</p>
+  </li>
+  <li>フォルダ構成。
+   <p>新たに任意のプロジェクトフォルダを指定すると、プロジェクトフォルダの中に言語フォルダが作られ、その中に画像ファイルを格納する{texturs}フォルダと、ページファイルを格納する{layouts}フォルダが、作成されます。</p>
+    <dl class="enum">
+    <dt>・{XXX_yy}フォルダ</dt>
+    <dd><p>言語フォルダ（XXXは大文字のアルファベット３文字、yyは小文字のアルファベット２文字）で、各言語によって名称が異なります。</p>
+    <p>プロジェクトに指定したフォルダに言語フォルダが無い場合は{JPN_ja}フォルダが作成されます。</p></dd>
+    <dt>・{texturs}フォルダ</dt>
+    <dd><p>ページで使用する画像ファイルを格納するフォルダで、言語フォルダの中に作成されます。</p></dd>
+    <dt>・{layouts}フォルダ</dt>
+    <dd>
+     <p>ページファイルを格納するフォルダで、言語フォルダの中に作成されます。</p>
+     
+     <p>ニンテンドーDSiウェア 電子取扱説明書は、この{layouts}フォルダ内のページファイルで構成されます。</p>
+     
+    </dd>
+   </dl>
+  </li>
+ </ol>
+<h2 id="Create_New_Layout"><a name="subwindow">プロジェクトウィンドウからプロジェクトを指定する</a></h2>
+ <ol>
+  <li>プロジェクトウィンドウを開く。
+   <p>TWL-ManualEditorを起動し、メインメニューの[ウィンドウ]→[プロジェクト]で、<a href="../../ui/sub_window/01_projectwindow.html">プロジェクトウィンドウ</a>を開きます。</p>
+   <p><img src="image/02_01_project.gif" border="0"></p>
+  </li>
+  <li>プロジェクトフォルダの指定。
+  <p>表示された<a href="../../ui/sub_window/01_projectwindow.html">プロジェクトウィンドウ</a>で、「プロジェクトフォルダの指定」アイコンをクリックします。</p>
+   <p><img src="image/02_02_project.gif" border="0"></p>
+  </li>
+  <li>フォルダの指定。
+  <p>フォルダの参照ダイアログが開きますので、任意のフォルダを指定して、「OK」ボタンをクリックします。</p>
+   <p><img src="image/02_03_project.gif" border="0"></p>
+  </li>
+  <li>フォルダの自動生成。
+   <p>指定したフォルダ内に言語フォルダと、２つのフォルダ{textures}{layouts}が自動生成されます。</p>
+   <p><img src="image/02_04_project.gif" border="0"></p>
+ </ol>
+<h2 id="Create_New_Layout"><a name="mainmenu">メニューからプロジェクトフォルダを指定する</a></h2>
+ <ol>
+  <li>プロジェクトウィンドウを開く。
+   <p>エディタを起動し、メインメニューの[ファイル]→[プロジェクトフォルダの指定]を選択します。</p>
+   <p><img src="image/02_05_project.gif" border="0"></p>
+  </li>
+  <li>フォルダの指定。
+  <p>フォルダの参照ダイアログが開きますので、任意のフォルダを指定して、「OK」ボタンをクリックします。</p>
+   <p><img src="image/02_03_project.gif" border="0"></p>
+  </li>
+  <li>フォルダの自動生成。
+   <p>指定したフォルダ内に言語フォルダと、２つのフォルダ{textures}{layouts}が自動生成されます。</p>
+   <p><img src="image/02_04_project.gif" border="0"></p>
+  </li>
+ </ol>
+
+</body>
+</html>

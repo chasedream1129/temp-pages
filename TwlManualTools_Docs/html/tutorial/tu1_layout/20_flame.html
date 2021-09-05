@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+ "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<meta http-equiv="Content-Style-Type" content="text/css">
+	<link href="../../css/manpage.css" rel="stylesheet" type="text/css">
+	<title>フレームオブジェクトを配置する</title>
+</head>
+<body>
+<h1 id="USE_WINDOW_PANE">フレームオブジェクトを配置する</h1>
+ <p>ページにフレームオブジェクトを配置できます。</p>
+<h2>フレームオブジェクトとは</h2>
+<h3>フレームオブジェクトのメリット</h3>
+ <p>４隅にパーツを配置して、各々のパーツを引き伸ばす事で枠を作る機能です。</p>
+ <p>小さくて少ない画像で大きな枠を作れるので、データサイズの削減に役立ちます。</p>
+ <p>画像の置き方には、画像の数で以下の３つの設定方法があります。</p>
+ <dl class="enum">
+  <dd><b><a href="21_flamesetting.html#0sheet">０枚指定</a>・・・・画像を指定せずに、単色の四角形を作成します。</b></dd>
+  <dd><b><a href="21_flamesetting.html#1sheet">１枚指定</a>・・・・左上の画像ファイルを指定すれば後は自動的に同じ画像ファイルをコピーしてフレームを作成します。</b></dd>
+  <dd><b><a href="21_flamesetting.html#4sheets">４枚指定</a>・・・・４隅の画像ファイルを別々に指定してフレームを作成します。</b></dd>
+ </dl>
+<h3>フレームオブジェクトの構成</h3>
+ <p><em>フレームオブジェクト</em>は、画像ファイルを複数枚組み合わせて、<em>フレームオブジェクトを作成するための機能</em>です。</p>
+ <p>画像ファイルを４隅に配置し、</p>
+ <p><img src="image/20_1_frame.gif" width="13" height="13" border="0" alt="フレームパーツ画像"></p>
+ <p>各辺を引き伸ばすことで構成しています。</p>
+ <p><img src="image/20_2_frame.gif" border="0" alt="フレーム概要図"></p>
+ <p>フレームオブジェクトの大きさは自在に変えられますので、小さな画像ファイルでサイズの違う枠を作るのに効果的です。</p>
+<h2 id="CREATE_WINDOW_PANE">フレームオブジェクトを作成する</h2>
+<h3>フレームオブジェクトを新規作成</h3>
+ <ol>
+  <li>フレームオブジェクトの作成。
+   <p>ページ上で、[右クリックメニュー]→[新規フレーム]を選択します。</p>
+   <p><img src="image/20_3_frame.gif" border="0" alt="新規フレーム作成"></p>
+  </li>
+  <li>フレームオブジェクトの配置。
+   <p>ページのレイアウト領域に四角形のオブジェクトが配置されます。</p>
+   <p><img src="image/20_4_frame.gif" border="0" alt="フレームの配置"></p>
+   <p>この状態のフレームオブジェクトは、<b>画像ファイルが指定されていない</b>状態です。</p>
+   <p>正しくフレームとして表示するためには<b><a href="21_flamesetting.html">画像ファイルを指定する</a></b>必要があります。</p>
+  </li>
+ </ol>
+</body>
+</html>

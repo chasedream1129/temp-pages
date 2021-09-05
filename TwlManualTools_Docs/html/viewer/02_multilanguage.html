@@ -1,0 +1,117 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+ "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<meta http-equiv="Content-Style-Type" content="text/css">
+    <link href="../css/manpage.css" rel="stylesheet" type="text/css">
+    <title>説明書バイナリファイルのプレビュー</title>
+</head>
+<body>
+<h1 id="MAIN_WINDOW">説明書のバイナリファイルのプレビュー</h1>
+<p>TWL-ManualEditor では、<a href="../tutorial/tu2_adjust/18_export.html">プロジェクトのバイナリ出力</a>で出力された説明書のバイナリファイルを読み込んでプレビューし、内容を確認できます。</p>
+<p><b><font color="#ff0000">注意）読み込めるファイル名は、バイナリファイル出力時の名前 manpages_narc.blz に限られますので、ファイル名を変更すると読み込めません。</font></b></p>
+<h2>バイナリファイルをプレビュー</h2>
+<h3>出力した説明書のバイナリファイルを読み込んでプレビューする</h3>
+<ol>
+<li>説明書のバイナリファイルを読み込む。
+  <p>メインメニューの[プレビュー]→[バイナリファイルをプレビュー]で、ファイル選択ダイアログが表示されます。</p>
+
+  <img src="image/multilanguage_01.gif" border="0">
+
+
+</li>
+<li>設定された環境でプレビュー。
+  <p>環境設定で指定したプレビュー先へ、説明書のバイナリファイルがプレビューされます。</p>
+</li>
+
+</ol>
+
+<h2>ビューアでの言語切り替え</h2>
+<p>複数言語を含む説明書のバイナリファイルの場合、ビューアの起動時の入力で言語を切り替えて表示できます。</p>
+<h3>言語切り替えの操作手順</h3>
+<ol>
+  <li>ビューアの起動。
+  <p>メインメニューの[プレビュー]→[バイナリファイルをプレビュー]で複数言語を含む説明書のバイナリファイルをプレビューしビューアを起動します。</p>
+<li>Ｂボタンの入力。
+  <p>ビューア起動、もしくは「説明書を閉じる」ボタンを押して再起動中に、Ｂボタンを押し続ける事で表示言語を切り替えます。</p>
+<li>NNS mcs サーバでの表示。
+  <p>入力に成功するとNNS mcs サーバのウィンドウで、選択された言語が表記されます。</p>
+<p><img src="image/multilanguage_02.gif" border="0"></p>
+<li>その他の言語の表示。
+<p>２から３の操作を繰り返す事で、説明書のバイナリファイルに含まれる全ての言語を順番に表示します。</p>
+
+</ol>
+<h3>リージョン毎の言語の順番</h3>
+<p>
+<table border="0">
+  <tbody>
+    <tr>
+      <td>各リージョンで、表示される言語の順番以下の表の順番です。</td>
+    </tr>
+    <tr>
+      <td>
+      <table border="1">
+  <tbody>
+    <tr>
+      <td>リージョン</td>
+      <td>日本</td>
+      <td>北米</td>
+      <td>欧州</td>
+      <td>豪州</td>
+    </tr>
+    <tr>
+            <td rowspan="7">言語</td>
+            <td>日本語</td>
+      <td>英語</td>
+      <td>英語</td>
+      <td>英語</td>
+    </tr>
+    <tr>
+      <td>追加言語</td>
+      <td>フランス語</td>
+      <td>フランス語</td>
+      <td>追加言語</td>
+    </tr>
+    <tr>
+      <td>　</td>
+      <td>スペイン語</td>
+      <td>スペイン語</td>
+      <td>　</td>
+    </tr>
+    <tr>
+      <td>　</td>
+      <td>追加言語</td>
+      <td>イタリア語</td>
+      <td>　</td>
+    </tr>
+    <tr>
+      <td>　</td>
+      <td>　</td>
+      <td>ドイツ語</td>
+      <td>　</td>
+    </tr>
+    <tr>
+      <td>　</td>
+      <td>　</td>
+      <td>オランダ語</td>
+      <td>　</td>
+    </tr>
+          <tr>
+            <td>　</td>
+            <td>　</td>
+            <td>追加言語</td>
+            <td>　</td>
+          </tr>
+        </tbody>
+</table>
+      </td>
+    </tr>
+    <tr>
+      <td>※追加言語が複数ある場合は、言語フォルダのファイル名の順番になります。<br>
+      ※最初に表示される言語は本体で設定されている言語ですが、本体で設定している言語が説明書のバイナリファイルに含まれていない場合は、ファイルに含まれる表中の言語の１番上の言語が表示されます。</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

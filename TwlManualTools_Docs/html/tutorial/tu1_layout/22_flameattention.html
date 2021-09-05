@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+ "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<meta http-equiv="Content-Style-Type" content="text/css">
+	<link href="../../css/manpage.css" rel="stylesheet" type="text/css">
+	<title>フレームオブジェクトの設定での注意点</title>
+</head>
+<body>
+<h1 id="USE_WINDOW_PANE">フレームオブジェクトの設定での注意点</h1>
+<p>フレームに使用する画像の状態によっては、プレビュー時にMCS通信エラーが出て、プレビューが中止されることがあります。</p>
+<h2>画像の指定枚数不足時のプレビューエラー</h2>
+<p>フレームで使用する画像の指定枚数が、1枚指定で1枚も画像ファイルを指定していない場合、</p>
+<p>もしくは、4枚指定で3枚以下の画像ファイルしか指定していない場合は、</p>
+<p>プレビュー時に、MCS通信エラーが出てプレビューが中止されます。</p>
+<p>このエラーが出た場合、指定枚数の画像ファイルを各隅に正しく割り当ててください。</p>
+<h2>画像サイズの差によるプレビューエラー</h2>
+<p>画像の4枚指定モードで、縦方向、もしくは横方向で、並べた画像の大きさに差があった場合、</p>
+<p>プレビュー時に、MCS通信エラーが出て、プレビューが中止されます。</p>
+<p>このエラーが出た場合は、画像のサイズを調整し直し、縦横方向で画像サイズに差がないようにしてください。</p>
+<table border="1" width="703">
+  <tbody>
+    <tr>
+      <td><img src="image/22_1_frameattention.gif" width="320" height="248" border="0" alt="NGフレーム"></td>
+      <td><img src="image/22_2_frameattention.gif" width="320" height="248" border="0" alt="OKフレーム"></td>
+    </tr>
+    <tr>
+      <td>縦横の並びで画像のサイズにズレがあると、<br>
+      プレビュー時にエラーが出ます。</td>
+      <td>縦横の画像サイズをそろえてください。</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+ "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+	<link href="../css/manpage.css" rel="stylesheet" type="text/css">
+	<title>テキストの禁則処理</title>
+</head>
+<body>
+<h1 id="SHORTCUT">テキストの禁則処理</h1>
+<p>TWL-ManualEditorでは、テキストオブジェクトの大きさで</p>
+<p>自動的に改行処理を行うとき、特定の文字や記号が行頭や行末へ来ることを禁止したり、</p>
+<p>特定の文字列が途中で折り返されることを禁止する、禁則処理を行っています。</p>
+<h2>禁則処理の設定</h2>
+<p>新規作成時、テキストオブジェクトには禁則処理が設定されています。</p>
+<p>禁則処理を解除するには、<a href="../ui/tool_bar/03_textbox_tool_bar.html">テキストツールバー</a>の、禁則処理ボタンをoffにします。</p>
+
+<h2>禁則処理</h2>
+
+<h3>行末禁止文字</h3>
+<p>表の文字が行末に来た場合は、その手前で折り返し表の文字が行末に来ないようにします。</p>
+<p><font color="#ff0000">注意）行末禁止文字の後ろに半角スペースがあると、半角スペースの特殊処理のために行末禁止処理はキャンセルされ、行末に行末禁止文字が来る場合があります。</font></p>
+
+<table border="1">
+  <tbody>
+    <tr>
+      <td rowspan="2">行末禁止文字</td>
+      <td>全角記号</td>
+      <td>（〔［｛〈《「『【‘“</td>
+    </tr>
+    <tr>
+      <td>半角記号</td>
+      <td>[(¡¿｢{</td>
+    </tr>
+  </tbody>
+</table>
+<h3>行頭禁止文字</h3>
+<p>表の文字が行頭に来た場合は、その手前で折り返し、表の文字が行頭に来ないようにします。</p>
+<p><font color="#ff0000">注意）行頭禁止文字の前に半角スペースがあると、半角スペースの特殊処理のために行頭禁止処理はキャンセルされ、行頭に行頭禁止文字が来る場合があります。</font></p>
+<p>
+<table border="1">
+  <tbody>
+    <tr>
+      <td rowspan="3">行頭禁止文字</td>
+      <td>全角記号</td>
+      <td>、。）〕］｝〉》」』】’”，．：</td>
+    </tr>
+    <tr>
+      <td>半角記号</td>
+      <td>)].,:;!?-}｣</td>
+    </tr>
+  </tbody>
+</table>
+<h3>分割禁止文字</h3>
+
+<p>表の文字を使った文字列があった場合、その文字列を分割するような折り返しが発生しないよう、文字列の手前で折り返します。</p>
+
+<p>
+<table border="1">
+  <tbody>
+    <tr>
+      <td rowspan="2">分割禁止文字</td>
+      <td>半角英数字</td>
+      <td>半角英数字の連続する羅列は全て分割禁止<br>
+      ※テキストオブジェクトに入りきらない分は、その場で折り返し。</td>
+    </tr>
+    <tr>
+      <td>半角記号</td>
+      <td>'&quot;™®</td>
+    </tr>
+  </tbody>
+</table>
+<p><font color="#ff0000">分割禁止の　&quot; (U+0022 DOUBLE QUOTATION MARK)を使用して、&quot;abc&quot;&quot;def&quot;
+のように単語を区切った場合、１連の単語として全てが分割禁止処理されます。</font></p>
+<p><font color="#ff0000">以上のように、思いがけない挙動を示す事がありますので、可能であれば　“abc”“def”　のように</font></p>
+<p><font color="#ff0000">行頭禁止の　” (U+201D RIGHT DOUBLEQUOTATION MARK)と、行末禁止の　“ (U+201C LEFT DOUBLE QUOTATION MARK)を、組み合わせての使用を推奨いたします。</font></p>
+<h2>半角スペースの特殊処理</h2>
+<p>文字の左に隣接した最初の半角スペースは、テキストオブジェクトのX方向の大きさに含まれません。</p>
+<p>そのため、自動改行は、文字の左隣に隣接した最初の半角スペースの右隣、もしくは左隣の文字から行われ、</p>
+<p>文字の左隣の半角スペースが行頭に来ることはありません。</p>
+<p>ただし、半角スペースを2つ以上連続で使用している場合は、２つめ以降の半角スペースには、</p>
+<p>半角スペースの特殊処理は行われませんので、半角スペースが行頭に来る場合があります。</p>
+</body>
+
+</html>
+

@@ -1,0 +1,148 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+ "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<meta http-equiv="Content-Style-Type" content="text/css">
+    <link href="../../css/manpage.css" rel="stylesheet" type="text/css">
+    <title>オブジェクト管理ウィンドウ</title>
+</head>
+<body>
+<h1 id="RELATION_WINDOW">オブジェクト管理ウィンドウ</h1>
+
+<p>ページ内で使用されているオブジェクトがすべて表示されており、オブジェクトを一括管理できます。</p>
+<p>メインメニューの[ウィンドウ]→[オブジェクト管理]で、オブジェクト管理ウィンドウを開きます。</p>
+<h2>オブジェクト管理ウィンドウの見かた</h2>
+<p>
+<table border="0">
+	<tbody>
+		<tr>
+			<td valign="top">
+
+
+<img src="images/02_01_objectmanage.gif" alt="親子階層管理ウィンドウ">
+
+
+
+
+
+</td>
+      <td valign="top">
+				<ol class="ui">
+					<li><a href="02_function_menu.html">操作。</a>
+						<p>選択しているオブジェクトに対するコマンドメニューです。</p>
+						<p>マウスの右クリックでも同内容のメニューを表示できます。</p>
+					</li>
+
+					<li>選択オブジェクトを自動的に表示on/off。
+        <p>ページウィンドウなどで選択したオブジェクトが、自動的に表示される機能をon/offできます。</p>
+	<p>※多数のオブジェクトが配置されたページで、オブジェクト管理ウィンドウ上の表示位置を勝手に変更されたくない場合は、offにしてください。</p>
+        </li>
+
+					<li>パラメータ調整アイコン。
+        <p>オブジェクトのパラメータを調整するアイコンです。</p>
+						<p>左側の目アイコンで、表示・非表示状態を設定します。</p>
+						<p>※プレビューやバイナリ出力時には、設定に関わらず、表示されます。</p>
+						<p>右の錠前アイコンでロック状態を設定します。</p>
+					</li>
+
+					<li>オブジェクトの表示。
+        <p>オブジェクトをツリー表示しています。</p>
+						<p>表示の上に位置するオブジェクトほど手前に表示され、</p>
+						<p>移動させる事で表示の優先順位を変更できます。</p>
+					</li>
+
+					<li>リンクされた画像の状態表示。
+						<p>オブジェクトにリンクされた画像の状態を示します。<table border="0">
+          <tbody>
+            <tr>
+              <td><img src="images/02_objectmanage_icon/02_external_pict.gif" width="32" height="32" border="0"></td>
+              <td>オブジェクト内にプロジェクトの外からリンクされている画像がある。</td>
+            </tr>
+            <tr>
+              <td><img src="images/02_objectmanage_icon/02_lost_pict.gif" width="32" height="32" border="0"></td>
+              <td>オブジェクト内で使用されている画像が見つからない。</td>
+            </tr>
+          </tbody>
+        </table>
+        </li>
+
+				</ol>
+			</td>
+    </tr>
+	<tr>
+	<td valign="top" colspan="2">
+
+<table class="toolbar">
+	<thead>
+		<tr>
+			<td colspan="4">アイコン</td>
+			<td rowspan="2">説明</td>
+		</tr>
+		<tr>
+			<td width="80" align="center">通常</td>
+			<td width="80" align="center">ロック</td>
+			<td width="80" align="center">非表示<br>（通常）</td>
+			<td width="80" align="center">非表示<br>（ロック）</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+            <td class="icon"><img src="images/02_objectmanage_icon/02_enable_group.gif" alt="グループオブジェクト（通常）" width="32" height="32"></td>
+            <td class="icon"><img src="images/02_objectmanage_icon/02_lock_group.gif" alt="グループオブジェクト（ロック）" width="32" height="32"></td>
+			<td class="icon"><img src="images/02_objectmanage_icon/02_hide_group.gif" alt="グループオブジェクト（非表示）" width="32" height="32"></td>
+			<td class="icon"><img src="images/02_objectmanage_icon/02_lock_hide_group.gif" alt="グループオブジェクト（非表示、ロック）" width="32" height="32"></td>
+			<td>グループ</td>
+		</tr>
+		<tr>
+			<td class="icon"><img src="images/02_objectmanage_icon/02_enable_text.gif" alt="テキストオブジェクト（通常）" width="32" height="32"></td>
+			<td class="icon"><img src="images/02_objectmanage_icon/02_lock_text.gif" alt="テキストオブジェクト（ロック）" width="32" height="32"></td>
+			<td class="icon"><img src="images/02_objectmanage_icon/02_hide_text.gif" alt="テキストオブジェクト（非表示）" width="32" height="32"></td>
+			<td class="icon"><img src="images/02_objectmanage_icon/02_lock_hide_text.gif" alt="テキストオブジェクト（非表示、ロック）" width="32" height="32"></td>
+			<td>テキストオブジェクト</td>
+		</tr>
+
+		<tr>
+			<td class="icon"><img src="images/02_objectmanage_icon/02_enable_pict.gif" alt="ピクチャオブジェクト（通常）" width="32" height="32"></td>
+			<td class="icon"><img src="images/02_objectmanage_icon/02_lock_pict.gif" alt="ピクチャオブジェクト（ロック）" width="32" height="32"></td>
+			<td class="icon"><img src="images/02_objectmanage_icon/02_hide_pict.gif" alt="ピクチャオブジェクト（非表示）" width="32" height="32"></td>
+			<td class="icon"><img src="images/02_objectmanage_icon/02_lock_hide_pict.gif" alt="ピクチャオブジェクト（非表示、ロック）"width="32" height="32" ></td>
+			<td>ピクチャオブジェクト</td>
+		</tr>
+
+		
+		<tr>
+			<td class="icon"><img src="images/02_objectmanage_icon/02_enable_frame.gif" alt="フレームオブジェクト（通常）" width="32" height="32"></td>
+			<td class="icon"><img src="images/02_objectmanage_icon/02_lock_frame.gif" alt="フレームオブジェクト（ロック）" width="32" height="32"></td>
+			<td class="icon"><img src="images/02_objectmanage_icon/02_hide_frame.gif" alt="フレームオブジェクト（非表示）" width="32" height="32"></td>
+			<td class="icon"><img src="images/02_objectmanage_icon/02_lock_hide_frame.gif"  alt="フレームオブジェクト（非表示、ロック）"width="32" height="32"></td>
+			<td>フレームオブジェクト</td>
+		</tr>
+
+
+		
+	</tbody>
+</table>
+
+</td>
+    </tr>
+  </tbody>
+</table>
+<h2>オブジェクト管理ウィンドウでの操作方法</h2>
+<ul>
+	<li>選択操作。
+  <p>マウスの左クリックで、ウィンドウ内のオブジェクトを直接選択します。<li>一括選択。
+  <p>Shiftキーを押しながら選択操作を行うことで、複数のオブジェクトを範囲指定して選択でき、</p>
+		<p>選択したオブジェクトとオブジェクトの間が、一括で選択されます。</p>
+	<li>追加選択。
+  <p>Ctrlキーを押しながら選択操作を行うことで、オブジェクトを追加選択します。</p>
+	<li>オブジェクト編集ウィンドウを開く。
+		<p>オブジェクトをダブルクリックすることで<a href="../property/00_object_editing.html#PROPERTY_WINDOW">オブジェクト編集ウィンドウ</a>を表示します。</p>
+	<li>コマンドメニューの表示。
+  <p>右クリックで<a href="02_function_menu.html">コマンドメニュー</a>をポップアップ表示します。</p>
+	<li>オブジェクト名の変更。
+  <p>グループ、オブジェクト名をクリックして選択し、RootPane 以外のグループの名前を変更できます。</p>
+</ul>
+
+</body>
+</html>
